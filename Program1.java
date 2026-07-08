@@ -1,5 +1,3 @@
-package mock;
-
 // wap to find freq of each digit
 public class Program1{
     public static void printFrequency(int n){
