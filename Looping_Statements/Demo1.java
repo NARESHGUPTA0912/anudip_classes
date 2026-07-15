@@ -1,3 +1,4 @@
+package Looping_Statements;
 public class Demo1 {
     public static void main(String[] args) {
         // int i=0;
@@ -15,7 +16,7 @@ public class Demo1 {
 
         // }
 
-        for(int i=0, j=10; i<=5, j>=7; i++, j--){
+        for(int i=0, j=10; i<=5 && j>=7; i++, j--){
             System.out.println(i+" "+j);
         }
     }

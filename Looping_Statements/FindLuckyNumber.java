@@ -1,3 +1,4 @@
+package Looping_Statements;
 import java.util.Scanner;
 
 public class FindLuckyNumber {

@@ -8,7 +8,6 @@ This repository contains my Java programs, classwork, and practice assignments c
 * Operators
 * Conditional Statements
 * Loops
-* Pattern Programs
 * Arrays
 * Strings
 * Object-Oriented Programming (OOP)
