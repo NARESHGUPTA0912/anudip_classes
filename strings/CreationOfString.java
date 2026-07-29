@@ -1,4 +1,3 @@
-
 public class CreationOfString {
     public static void main(String[] args) {
         String s1 = "Naresh Gupta";

@@ -10,6 +10,7 @@ This repository contains my Java programs, classwork, and practice assignments c
 * Loops
 * Arrays
 * Strings
+* Methods
 * Object-Oriented Programming (OOP)
 
 ## Purpose
