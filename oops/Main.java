@@ -1,5 +1,3 @@
-package oops;
-
 class BankAccount {
     String accountHolderName;
     double balance;
@@ -31,6 +29,7 @@ class SavingsAccount extends BankAccount {
 
 public class Main {
     public static void main(String[] args) {
+        
         SavingsAccount s = new SavingsAccount("Rahul", 15000, 5);
         s.displayInfo();
         s.displayInterest();

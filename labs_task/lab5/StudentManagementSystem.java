@@ -1,11 +1,13 @@
-/*** Assignment - 1 ***/
+package labs_task.lab5;
+
+import java.util.Scanner;
+
 class Student {
     int studentId;
     String studentName;
     String course;
     double marks;
 
-    // Parameterized Constructor
     Student(int studentId, String studentName, String course, double marks) {
         this.studentId = studentId;
         this.studentName = studentName;
@@ -13,7 +15,6 @@ class Student {
         this.marks = marks;
     }
 
-    // Display Student Details
     void displayDetails() {
         System.out.println("Student ID   : " + studentId);
         System.out.println("Student Name : " + studentName);
@@ -21,31 +22,74 @@ class Student {
         System.out.println("Marks        : " + marks);
     }
 
-    // Check Pass or Fail
     void isPassed() {
-        if (marks >= 40) {
+        if (marks >= 40)
             System.out.println("Result       : Passed");
-        } else {
+        else
             System.out.println("Result       : Failed");
-        }
+
         System.out.println();
+    }
+
+    // Returns the student having highest marks
+    static Student getTopper(Student[] students) {
+        Student topper = students[0];
+
+        for (int i = 1; i < students.length; i++) {
+            if (students[i].marks > topper.marks) {
+                topper = students[i];
+            }
+        }
+
+        return topper;
     }
 }
 
 public class StudentManagementSystem {
     public static void main(String[] args) {
 
-        Student s1 = new Student(101, "Naresh Gupta", "MCA", 84);
-        Student s2 = new Student(102, "Anushka Pal", "MBA", 77);
-        Student s3 = new Student(103, "Prince Gupta", "M.Tech", 89);
+        try (Scanner scanner = new Scanner(System.in)) {
 
-        s1.displayDetails();
-        s1.isPassed();
+            System.out.println("------ Student Management System ------");
+            System.out.println("How many students do you want to enter details for? ");
+            int numStudents = scanner.nextInt();
+            scanner.nextLine();
+            Student[] students = new Student[numStudents];
 
-        s2.displayDetails();
-        s2.isPassed();
-
-        s3.displayDetails();
-        s3.isPassed();
+            for (int i = 0; i < students.length; i++) {
+                
+                System.out.println("\nEnter Details of Student " + (i + 1));
+                
+                System.out.print("Enter Student ID: ");
+                int id = scanner.nextInt();
+                scanner.nextLine();
+                
+                System.out.print("Enter Student Name: ");
+                String name = scanner.nextLine();
+                
+                System.out.print("Enter Course: ");
+                String course = scanner.nextLine();
+                
+                System.out.print("Enter Marks: ");
+                double marks = scanner.nextDouble();
+                scanner.nextLine();
+                
+                students[i] = new Student(id, name, course, marks);
+            }
+            
+            System.out.println("\n------ Student Details ------");
+            
+            for (Student student : students) {
+                student.displayDetails();
+                student.isPassed();
+            }
+            
+            Student topper = Student.getTopper(students);
+            
+            System.out.println("------ Topper Details ------");
+            topper.displayDetails();
+        } catch (Exception e) {
+            System.out.println("Invalid input. Please enter valid data.");
+        }
     }
 }

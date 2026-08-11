@@ -1,3 +1,5 @@
+package labs_task.lab5;
+
 /***  Assignment - 2  ***/
 class BankAccount {
     long accountNumber;
