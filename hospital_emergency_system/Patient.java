@@ -1,5 +1,6 @@
 package hospital_emergency_system;
 
+// designed by Naresh Gupta
 final class Patient {
 
     private final int patientId;

@@ -2,7 +2,9 @@ package hospital_emergency_system;
 
 import java.util.List;
 
-class PatientStatistics {
+
+// written by harsh
+class PatientAgeStatistics {
 
     public static Patient findOldest(List<Patient> patients) {
         validatePatients(patients);

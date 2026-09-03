@@ -3,6 +3,7 @@ package hospital_emergency_system;
 import java.util.PriorityQueue;
 import java.util.Queue;
 
+// written by rihan
 class EmergencyQueue {
 
     private final Queue<Patient> queue;
@@ -35,12 +36,10 @@ class EmergencyQueue {
         return queue.peek();
     }
 
-    // Get number of waiting patients
     public int size() {
         return queue.size();
     }
 
-    // Check whether queue is empty
     public boolean isEmpty() {
         return queue.isEmpty();
     }

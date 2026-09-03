@@ -5,6 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+// written by Naresh Gupta and harsh
 class HospitalService {
 
     private final List<Patient> patients;
@@ -43,12 +44,6 @@ class HospitalService {
         return emergencyQueue;
     }
 
-    public void hospitalStatisticalReport() {
-        System.out.println("===== PATIENT STATISTICAL Report =====");
-        System.out.println("Oldest Patient: " + PatientStatistics.findOldest(patients));
-        System.out.println("Youngest Patient: " + PatientStatistics.findYoungest(patients));
-        System.out.println("Average Age: " + PatientStatistics.averageAge(patients));
-    }
 
     public void hospitalEmergencyReport() {
         int critical = 0;

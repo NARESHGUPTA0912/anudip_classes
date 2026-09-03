@@ -23,9 +23,9 @@ public class HospitalManagementSystem {
             // Statistics
             System.out.println("===== PATIENT STATISTICS =====");
 
-            System.out.println("Oldest Patient: " + PatientStatistics.findOldest(patients));
-            System.out.println("Youngest Patient: " + PatientStatistics.findYoungest(patients));
-            System.out.println("Average Age: " + PatientStatistics.averageAge(patients));
+            System.out.println("Oldest Patient: " + PatientAgeStatistics.findOldest(patients));
+            System.out.println("Youngest Patient: " + PatientAgeStatistics.findYoungest(patients));
+            System.out.println("Average Age : " + PatientAgeStatistics.averageAge(patients));
 
             hospital.hospitalEmergencyReport();
 
