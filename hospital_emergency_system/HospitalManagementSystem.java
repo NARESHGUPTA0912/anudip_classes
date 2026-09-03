@@ -1,3 +1,4 @@
+// written by naresh gupta
 package hospital_emergency_system;
 
 
@@ -17,11 +18,17 @@ public class HospitalManagementSystem {
             hospital.addPatient(new Patient(104, "Neha", 30, 1, 4));
             hospital.addPatient(new Patient(105, "Rohit", 50, 2, 5));
 
+
             List<Patient> patients = hospital.getPatients();
+            System.out.println("List of Patients: ");
+            for(Patient p: patients) {
+                System.out.println(p);
+            }
+
             EmergencyQueue queue = hospital.getEmergencyQueue();
 
             // Statistics
-            System.out.println("===== PATIENT STATISTICS =====");
+            System.out.println("===== PATIENT AGE STATISTICS =====");
 
             System.out.println("Oldest Patient: " + PatientAgeStatistics.findOldest(patients));
             System.out.println("Youngest Patient: " + PatientAgeStatistics.findYoungest(patients));
@@ -29,9 +36,6 @@ public class HospitalManagementSystem {
 
             hospital.hospitalEmergencyReport();
 
-           // Next Patient
-            System.out.println("\n===== EMERGENCY QUEUE =====");
-            System.out.println("Next Patient: " + queue.peekNextPatient());
 
             // Treatment
             System.out.println("\n===== TREATMENT ORDER =====");

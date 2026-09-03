@@ -1,3 +1,4 @@
+// written by Naresh Gupta and harsh
 package hospital_emergency_system;
 
 import java.util.ArrayList;
@@ -5,7 +6,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-// written by Naresh Gupta and harsh
 class HospitalService {
 
     private final List<Patient> patients;

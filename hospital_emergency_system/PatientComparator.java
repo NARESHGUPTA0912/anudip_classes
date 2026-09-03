@@ -1,8 +1,8 @@
+// written by ashish
 package hospital_emergency_system;
 
 import java.util.Comparator;
 
-// written by ashish
 class PatientComparator implements Comparator<Patient> {
 
     @Override
