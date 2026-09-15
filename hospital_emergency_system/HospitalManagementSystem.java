@@ -20,24 +20,25 @@ public class HospitalManagementSystem {
 
 
             List<Patient> patients = hospital.getPatients();
-            System.out.println("List of Patients: ");
+            System.out.println("\nList of Patients in Hospital: ");
             for(Patient p: patients) {
                 System.out.println(p);
             }
+            System.out.println();
 
             EmergencyQueue queue = hospital.getEmergencyQueue();
 
-            // Statistics
+            //  Patient age statistics
             System.out.println("===== PATIENT AGE STATISTICS =====");
 
             System.out.println("Oldest Patient: " + PatientAgeStatistics.findOldest(patients));
             System.out.println("Youngest Patient: " + PatientAgeStatistics.findYoungest(patients));
             System.out.println("Average Age : " + PatientAgeStatistics.averageAge(patients));
+            System.out.println();
 
             hospital.hospitalEmergencyReport();
 
-
-            // Treatment
+            // Treatment Order
             System.out.println("\n===== TREATMENT ORDER =====");
             while (!queue.isEmpty()) {
                 Patient patient = queue.treatNextPatient();
