@@ -12,6 +12,7 @@ This repository contains my Java programs, classwork, and practice assignments c
 * Strings
 * Methods
 * Object-Oriented Programming (OOP)
+* Multithreading 
 
 ## Purpose
 
