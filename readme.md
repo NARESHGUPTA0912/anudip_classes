@@ -20,7 +20,7 @@ This repository contains my Java programs, classwork, and practice assignments c
 * Practice Java programming
 * Store class assignments
 * Improve Fundamentals Understanding
-* Track my learning progress
+* Track my daily learning progress
 
 ## Tools Used
 
