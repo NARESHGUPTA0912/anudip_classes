@@ -1,6 +1,6 @@
 # Anudip Classes
 
-This repository contains my Java programs, classwork, and practice assignments completed during the Anudip training program.
+This repository contains my Java programs, classwork, labs and practice assignments completed during the Anudip training program.
 
 ## Topics
 
