@@ -12,6 +12,7 @@ This repository contains my Java programs, classwork, labs and practice assignme
 * Strings
 * Methods
 * Object-Oriented Programming (OOP)
+* Exception Handling
 * Multithreading
 * Collection Framework 
 
